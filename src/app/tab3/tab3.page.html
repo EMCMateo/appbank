@@ -1,0 +1,88 @@
+<ion-toolbar color="dark">
+  <ion-buttons slot="start" >
+    <ion-button color="success" href="/tabs/tab2" > <ion-icon color="success" name="arrow-back">  </ion-icon> Regresar </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content [fullscreen]="true" color="dark" class="ion-padding">
+
+  <ion-card color="dark">
+    <ion-card-content color="dark">
+      <ion-list color="dark">
+        <ion-item color="dark">
+          <ion-thumbnail slot="start" color="dark">
+            <img alt="User" src="../../assets/img/1.png" />
+          </ion-thumbnail>
+          <ion-label>
+            
+            <h6>Mateo Molina</h6>
+            <p class="p1">Quito, Ecuador</p>
+            
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-img class="pic3" src="../../assets/img/10.png"></ion-img>
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Transacciones</ion-card-title>
+      <ion-card-subtitle>Resumen</ion-card-subtitle>
+      <ion-card-subtitle>Ult. 30 días</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+          <ion-item color="dark">
+            <ion-thumbnail slot="start">
+              <img alt="" src="../../assets/img/14.png" />
+            </ion-thumbnail>
+            <ion-label><h6>Corriente</h6>
+              <p class="p1"> Personal </p> </ion-label>
+            <ion-label class="ion-lbl-1">$236,654.00 <ion-label class="ion-lbl-2">29/8/2006</ion-label> </ion-label>
+            
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+    
+          <ion-item color="dark">
+            <ion-thumbnail slot="start">
+              <img alt="" src="../../assets/img/13.png" />
+            </ion-thumbnail>
+            <ion-label><h6>Compras mensuales</h6>
+              <p class="p1"> Personal </p> </ion-label>
+            <ion-label class="ion-lbl-1">$1000.00 <ion-label class="ion-lbl-2">29/8/2006</ion-label> </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+            
+      
+          <ion-item color="dark">
+            <ion-thumbnail slot="start">
+              <img alt="" src="../../assets/img/12.png" />
+            </ion-thumbnail>
+            <ion-label><h6>Tendencias</h6>
+              <p class="p1"> Main </p> </ion-label>
+            <ion-label class="ion-lbl-1">$200.00 <ion-label class="ion-lbl-2">29/8/2006</ion-label> </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item color="dark">
+            <ion-thumbnail slot="start">
+              <img alt="" src="../../assets/img/11.png" />
+            </ion-thumbnail>
+            <ion-label><h6>Ahorros</h6>
+              <p class="p1"> Personal </p></ion-label>
+            <ion-label class="ion-lbl-1">$500.00 <ion-label class="ion-lbl-2">29/8/2006</ion-label> </ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+    
+        </ion-reorder-group>
+      </ion-list>
+    
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>

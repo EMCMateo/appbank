@@ -1,0 +1,75 @@
+<ion-toolbar color="dark">
+  <ion-buttons slot="start">
+    <ion-button color="success" href="/tabs/tab1" > <ion-icon color="success" name="arrow-back">  </ion-icon> Regresar </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content [fullscreen]="true" color="dark" class="ion-padding">
+  <ion-card color="dark">
+    <ion-card-content color="dark">
+      <ion-list color="dark">
+        <ion-item color="dark">
+          <ion-thumbnail slot="start" color="dark">
+            <img alt="User" src="../../assets/img/1.png" />
+          </ion-thumbnail>
+          <ion-label>
+            <h6>Mateo Molina</h6>
+            <p class="p1">📍Machala, Ecuador</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <div class="mid-b-1">
+        <ion-button fill="clear" color="warning" style="min-width: 5%"> <ion-icon slot="icon-only"
+            name="construct-outline"> </ion-icon> </ion-button>
+      </div>
+      <ion-card-subtitle>Mi dinero: </ion-card-subtitle>
+      <ion-card-title>$ 236,654.00</ion-card-title>
+    </ion-card-header>
+
+
+    <ion-button fill="clear" color="success" href="/tabs/tab3"> Ver mis Transacciones  </ion-button>
+
+  </ion-card>
+  <div class="mid-b">
+    <ion-button fill="clear" color="success"><ion-icon slot="icon-only" name="add-outline"></ion-icon> </ion-button>
+    <ion-button fill="clear" color="success"><ion-icon slot="icon-only" name="search-outline"></ion-icon> </ion-button>
+    <ion-button fill="clear" color="success"><ion-icon slot="icon-only" name="trending-up-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <ion-img class="pic3" src="../../assets/img/8.png"></ion-img>
+
+  <div class="mid-b-2">
+    <ion-card color="dark">
+
+      
+      <ion-card-header> <ion-card-subtitle>Las Bandidas </ion-card-subtitle> <ion-card-title> $5000.00</ion-card-title>
+      </ion-card-header>
+      <ion-button id="presentar-alerta" color="success"> <ion-icon slot="end" name="arrow-forward-outline" ></ion-icon>Ir</ion-button>
+      <ion-alert trigger="presentar-alerta" header="Alerta! Exceso de flow" subHeader="La primera se desespera" message="Se encabrona si se lo echo fuera" [buttons]="alertButtons"></ion-alert> </ion-card>
+    
+      <ion-card color="dark">
+      <ion-card-header> <ion-card-subtitle> Las Malcriadas </ion-card-subtitle> <ion-card-title> $2050.00</ion-card-title>
+      </ion-card-header> 
+      <ion-button id="presentar-alerta-1" color="success"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>Ir</ion-button>
+      <ion-alert trigger="presentar-alerta-1" header="Alerta! Exceso de flow" subHeader="La segunda tiene la funda" message="Me paga pa que se lo hyundai" [buttons]="alertButtons"></ion-alert> </ion-card>
+    
+        <ion-card color="dark">
+      <ion-card-header> <ion-card-subtitle> Las Gatas </ion-card-subtitle> <ion-card-title> $1025.00</ion-card-title>
+      </ion-card-header> 
+      <ion-button id="presentar-alerta-2" color="success"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>Ir</ion-button>
+      <ion-alert trigger="presentar-alerta-2" header="Alerta! Exceso de flow" subHeader="La tercera me quita el estrés" message="Polvo corrido siempre echamos tres" [buttons]="alertButtons"></ion-alert> </ion-card>
+    
+        <ion-card color="dark">
+      <ion-card-header> <ion-card-subtitle> Las Babys </ion-card-subtitle> <ion-card-title> $3200.00</ion-card-title>
+      </ion-card-header> 
+      <ion-button id="presentar-alerta-3" color="success"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>Ir</ion-button>
+      <ion-alert trigger="presentar-alerta-3" header="Alerta! Exceso de flow" subHeader="A la cuarta le bajo la luna" message="Pero quiere con Maluma y conmigo a la vez" [buttons]="alertButtons"></ion-alert> </ion-card>
+  </div>
+
+  
+</ion-content>
